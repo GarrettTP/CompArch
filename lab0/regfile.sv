@@ -18,9 +18,7 @@ module regfile (
       end
    end
 
-   always @(ra1, ra2) begin
-      rd1 = rf[ra1];
-      rd2 = rf[ra2];
-   end
+   assign rd1 = ra1 == 5'b0 ? 0 : rf[ra1];
+   assign rd2 = ra2 == 5'b0 ? 0 : rf[ra2];
    
 endmodule // regfile

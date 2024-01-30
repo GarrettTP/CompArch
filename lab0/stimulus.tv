@@ -1,0 +1,13 @@
+// NOTE: this file is read as hex and must be compiled with compile_stimulus.py
+
+// write_rd1_rd2_wa3_wd3_rd1_rd2
+0_00_00_00_00000000_00000000_00000000 // Do nothing
+1_00_00_22_00000069_00000000_00000000 // Write 0x0000069 to address 0x22
+0_00_22_00_00000000_00000000_00000069 // Read address 0x22 in rd2
+1_00_00_00_00000069_00000000_00000000 // Attempt to write to and read from register 0, should return 0
+0_22_00_00_00000000_00000069_00000000 // Read address 0x22 in rd1
+1_00_00_21_12345678_00000000_00000000 // Write 0x12345678 to address 0x21
+0_21_00_00_00000000_12345678_00000000 // Read address 0x21
+
+// This line will throw an error
+// 0_22_00_00_00000000_12345678_00000000 // Read from the wrong address

@@ -1,3 +1,20 @@
+# do reg.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is garre@GARRETTS-SURFAC.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 20:56:47 on Jan 29,2024
+# vlog regfile.sv reg_tb_auto.sv 
+# -- Compiling module regfile
+# -- Compiling module stimulus
+# 
+# Top level modules:
+# 	stimulus
+# End time: 20:56:47 on Jan 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.stimulus 
+# Start time: 20:56:47 on Jan 29,2024
+# ** Note: (vsim-3812) Design is being optimized...
 # //  ModelSim SE-64 2021.3 Jul 13 2021
 # //
 # //  Copyright 1991-2021 Mentor Graphics Corporation
@@ -11,33 +28,27 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# do FSM.do
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is garre@GARRETTS-SURFAC.
-# ** Warning: (vlib-34) Library already exists at "work".
-# Errors: 0, Warnings: 1
-# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
-# Start time: 15:47:17 on Jan 26,2024
-# vlog -reportprogress 300 FSM.sv FSM_tb.sv 
-# -- Compiling module FSM
-# -- Compiling module stimulus
-# 
-# Top level modules:
-# 	stimulus
-# End time: 15:47:17 on Jan 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" work.stimulus 
-# Start time: 15:47:17 on Jan 26,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Note: (vopt-143) Recognized 1 FSM in module "FSM(fast)".
 # Loading sv_std.std
 # Loading work.stimulus(fast)
-# Loading work.FSM(fast)
-# .main_pane.list.interior.cs.body
-# .main_pane.wave.interior.cs.body.pw.wf
+# Loading work.regfile(fast)
+# .list
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: garre  Hostname: GARRETTS-SURFAC  ProcessID: 7380
-#           Attempting to use alternate WLF file "./wlfttj4hzi".
+#           Attempting to use alternate WLF file "./wlftdnhxex".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfttj4hzi
-# End time: 15:47:34 on Jan 26,2024, Elapsed time: 0:00:17
+#           Using alternate file: ./wlftdnhxex
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+# configure wave not supported in batch mode
+#          7 tests completed with          0 errors
+# ** Note: $stop    : reg_tb_auto.sv(64)
+#    Time: 75 ns  Iteration: 1  Instance: /stimulus
+# Break in Module stimulus at reg_tb_auto.sv line 64
+# Stopped at reg_tb_auto.sv line 64
+# End time: 20:56:53 on Jan 29,2024, Elapsed time: 0:00:06
 # Errors: 0, Warnings: 2
